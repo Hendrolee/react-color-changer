@@ -10,7 +10,7 @@ const ColorPickerColorChanger = () => {
       <h1>Change colors</h1>
       <Colorpicker
         onChange={(selectedColor) => {
-          console.log(selectedColor);
+          setColor(selectedColor.hex);
         }}
         defaultColor={"#f0f8ff"}
       />
