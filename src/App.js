@@ -1,13 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+import ColorPickerColorChanger from "./ColorPickerColorChanger";
 import TwoClicksColorChanger from "./TwoClicksColorChanger";
+import { ThemeProvider } from "@zendeskgarden/react-theming";
 
 function App() {
   return (
-    <div className="App">
-      <TwoClicksColorChanger />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <TwoClicksColorChanger />
+        <ColorPickerColorChanger />
+      </div>
+    </ThemeProvider>
   );
 }
 
